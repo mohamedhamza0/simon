@@ -1,0 +1,152 @@
+/* custom variables */
+:root {
+    --main-ff: 'Poppins';
+    --main-color: 32, 203, 152;
+    --gray-color: 109, 118, 126;
+}
+
+/* GLOBAL STYLE */
+body {
+    font-family: var(--main-ff) , sans-serif;
+}
+
+::selection {
+    background-color: rgba(var(--main-color));
+    color: #fff;
+}
+/* UTILITIES */
+.text-main {
+    --opacity: 1;
+    color: rgba(var(--main-color), var(--opacity));
+}
+.text-main.hover {
+    --opacity: .6;
+}
+.bg-main {
+    --opacity: 1;
+    background-color: rgba(var(--main-color), var(--opacity));
+}
+.text-gray {
+    --opacity: 1;
+    color: rgba(var(--gray-color), var(--opacity));
+}
+.bg-gray {
+    --opacity: 1;
+    background-color: rgba(var(--gray-color), var(--opacity));
+}
+
+.opacity__50 {
+    --opacity: .5;
+}
+
+.btn-outline-main {
+    --bs-btn-color: rgba(var(--main-color));
+    --bs-btn-border-color: rgba(var(--main-color));
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--main-color));
+    --bs-btn-hover-border-color: rgba(var(--main-color));
+    --bs-btn-focus-shadow-rgb: 248,249,250;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: rgba(var(--main-color));
+    --bs-btn-active-border-color: rgba(var(--main-color));
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(var(--main-color), 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #fff;
+    --bs-gradient: none;
+}
+
+.square {
+    --length: 40px;
+    width: var(--length);
+    height: var(--length);
+}
+
+.top-30 {
+    top: 30%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.display-lg {
+    font-size: calc(3rem + 4vw);
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+
+
+.title h3::after {
+    content: '';
+    width: 90px;
+    height: 3px;
+    background-color: rgba(var(--main-color));
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    margin: auto;
+}
+
+.tr {
+    transition: .3s all;
+}
+
+/* NAVBAR */
+#nav .nav-link {
+    color: white;
+}
+#nav .nav-link:hover {
+    color: rgba(var(--main-color));
+}
+#nav .nav-link.active {
+    color: rgba(var(--main-color));
+}
+
+#nav .navbar-toggler {
+    box-shadow: none;
+    border: 0;
+}
+
+/* HEADER */
+header {
+    background-image: linear-gradient(rgba(38, 36, 36, 0.7) , rgba(0,0,0,.7)),
+    url(../imgs/_intro-bg.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+.arrow {
+    bottom: calc(5% + 40px);
+    opacity: 0;
+    animation: arrow-animation 2s infinite;
+}
+
+@keyframes arrow-animation {
+    100%{bottom: 5%; opacity: 1;}
+}
+
+/* About */
+.counter > div:not(:last-child) {
+    border-right: 1px solid rgb(128, 128, 128 , .2);
+}
+
+
+@media screen and (max-width: 992px) {
+    .counter > div:not(:last-child) {
+        border-right: none;
+    }
+    .counter > div:nth-child(1) , .counter > div:nth-child(3)  {
+        border-right: 1px solid rgb(128, 128, 128 , .2);
+    }
+    .counter > div:nth-child(1) , .counter > div:nth-child(2)  {
+        border-bottom: 1px solid rgb(128, 128, 128 , .2);
+    }
+}
+
+/* SERVICES */

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS -->
+    <!-- GOOGLEFONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- FONTAWSOME -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- MAIN -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav
+      id="nav"
+      data-bs-theme="dark"
+      class="navbar navbar-expand-lg bg-body py-3 fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="imgs/logo-light.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars text-white fs-4"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">What I Do</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Client</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      id="home"
+      class="position-relative text-center text-white min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="header-content">
+        <p class="fs-2">welcome</p>
+        <h1 class="display-1 fw-semibold">I'm a Simone</h1>
+        <p class="fs-5">based in Los Angeles, California.</p>
+        <button
+          class="btn btn-outline-main py-3 px-5 fw-semibold border-3 rounded-pill"
+        >
+          Hire Me
+        </button>
+      </div>
+
+      <div
+        class="settings shadow position-fixed end-0 pointer fs-5 bg-gray square d-flex justify-content-center align-items-center top-30 rounded-start"
+      >
+        <i class="fa-solid fa-gear"></i>
+      </div>
+
+      <i
+        class="fa-solid fa-angle-down position-absolute start-50 translate-middle-x arrow fs-5"
+      ></i>
+    </header>
+
+    <section id="about" class="py-5">
+      <div class="container">
+        <div
+          class="title mb-5 position-relative d-flex justify-content-center align-items-center"
+        >
+          <h2
+            class="text-black text-opacity-25 display-lg text-nowrap text-uppercase fw-bolder"
+          >
+            about me
+          </h2>
+          <h3 class="fs-2 position-absolute fw-semibold">Know Me More</h3>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-9">
+            <h4 class="h2">
+              I'm <span class="text-main">Simone Olivia</span>, a Web Developer
+            </h4>
+            <p class="text-muted">
+              I help you build brand for your business at an affordable price.
+              Thousands of clients have procured exceptional results while
+              working with our dedicated team. when an unknown printer took a
+              galley of type and scrambled it to make a type specimen book.
+            </p>
+            <p class="text-muted">
+              Delivering work within time and budget which meets clientâ€™s
+              requirements is our moto. Lorem Ipsum has been the industry's
+              standard dummy text ever when an unknown printer took a galley.
+              Lorem Ipsum has been the industry's standard dummy text ever when
+              an unknown printer took a galley.
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <!-- 
+                        Name:Simone Olivia
+Email:chat@simone.com
+Age:28
+From:Los Angeles, California
+                     -->
+
+            <ul class="list-unstyled">
+              <li class="py-3 border-bottom text-muted">
+                <span class="fw-semibold text-black pe-1">Name: </span> Simone
+                Olivia
+              </li>
+              <li class="py-3 border-bottom text-muted">
+                <span class="fw-semibold text-black pe-1">Email: </span
+                ><a
+                  class="text-main hover tr text-decoration-none"
+                  href="emailto:chat@simone.com"
+                  >chat@simone.com</a
+                >
+              </li>
+              <li class="py-3 border-bottom text-muted">
+                <span class="fw-semibold text-black pe-1">Age: </span>28
+              </li>
+              <li class="py-3 border-bottom text-muted">
+                <span class="fw-semibold text-black pe-1">From: </span>Los
+                Angeles, California
+              </li>
+            </ul>
+
+            <a
+              href=""
+              class="btn btn-outline-main rounded-pill py-3 px-5 shadow-sm"
+              download
+              >Download CV</a
+            >
+          </div>
+
+          <!-- *********************************** -->
+        </div>
+
+        <div class="row py-5 counter">
+          <div
+            class="col-lg-3 py-4 d-flex gap-2 flex-column align-items-center justify-content-center col-6"
+          >
+            <span class="display-5 fw-semibold text-gray">10+</span>
+            <span>Years Experiance</span>
+          </div>
+          <div
+            class="col-lg-3 py-4 d-flex gap-2 flex-column align-items-center justify-content-center col-6"
+          >
+            <span class="display-5 fw-semibold text-gray">250+</span>
+            <span>Happy Clients </span>
+          </div>
+          <div
+            class="col-lg-3 py-4 d-flex gap-2 flex-column align-items-center justify-content-center col-6"
+          >
+            <span class="display-5 fw-semibold text-gray">650+</span>
+            <span>Projects Done </span>
+          </div>
+          <div
+            class="col-lg-3 py-4 d-flex gap-2 flex-column align-items-center justify-content-center col-6"
+          >
+            <span class="display-5 fw-semibold text-gray">38+</span>
+            <span>Get Awards </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="bg-light py-5">
+      <div class="container">
+        <div
+          class="title pb-5 position-relative d-flex justify-content-center align-items-center"
+        >
+          <h2
+            class="text-black text-opacity-25 display-lg text-nowrap text-uppercase fw-bolder"
+          >
+            services
+          </h2>
+          <h3 class="fs-2 position-absolute fw-semibold">What I Do?</h3>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6 d-flex gap-3">
+            <div
+              style="--length: 60px"
+              class="icon square bg-primary flex-shrink-0 d-flex justify-content-center align-items-center text-main fs-4 shadow bg-white rounded-2"
+            >
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="content">
+              <h4>Graphic Design</h4>
+              <p class="text-muted">
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex gap-3">
+            <div
+              style="--length: 60px"
+              class="icon square bg-primary flex-shrink-0 d-flex justify-content-center align-items-center text-main fs-4 shadow bg-white rounded-2"
+            >
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="content">
+              <h4>Web Design</h4>
+              <p class="text-muted">
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex gap-3">
+            <div
+              style="--length: 60px"
+              class="icon square bg-primary flex-shrink-0 d-flex justify-content-center align-items-center text-main fs-4 shadow bg-white rounded-2"
+            >
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="content">
+              <h4>UI/UX Design</h4>
+              <p class="text-muted">
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex gap-3">
+            <div
+              style="--length: 60px"
+              class="icon square bg-primary flex-shrink-0 d-flex justify-content-center align-items-center text-main fs-4 shadow bg-white rounded-2"
+            >
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="content">
+              <h4>App Design & Develop</h4>
+              <p class="text-muted">
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex gap-3">
+            <div
+              style="--length: 60px"
+              class="icon square bg-primary flex-shrink-0 d-flex justify-content-center align-items-center text-main fs-4 shadow bg-white rounded-2"
+            >
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="content">
+              <h4>Business Analysis</h4>
+              <p class="text-muted">
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex gap-3">
+            <div
+              style="--length: 60px"
+              class="icon square bg-primary flex-shrink-0 d-flex justify-content-center align-items-center text-main fs-4 shadow bg-white rounded-2"
+            >
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="content">
+              <h4>SEO Marketing</h4>
+              <p class="text-muted">
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="py-5">
+      <div class="container">
+        <div
+          class="title pb-5 position-relative d-flex justify-content-center align-items-center"
+        >
+          <h2
+            class="text-black text-opacity-25 display-lg text-nowrap text-uppercase fw-bolder"
+          >
+            summary
+          </h2>
+          <h3 class="fs-2 position-absolute fw-semibold">Resume</h3>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h4 class="mb-3">My Education</h4>
+            <div class="resume-item mb-3 p-3 rounded border border-opacity-75">
+              <span class="badge bg-main mb-3">2000 - 2004</span>
+              <h5 class="h4">Computer Science</h5>
+              <span class="text-danger">International University </span>
+              <p class="mt-3">
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </p>
+            </div>
+            <div class="resume-item mb-3 p-3 rounded border border-opacity-75">
+              <span class="badge bg-main mb-3">2000 - 2004</span>
+              <h5 class="h4">Computer Science</h5>
+              <span class="text-danger">International University </span>
+              <p class="mt-3">
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </p>
+            </div>
+            <div class="resume-item mb-3 p-3 rounded border border-opacity-75">
+              <span class="badge bg-main mb-3">2000 - 2004</span>
+              <h5 class="h4">Computer Science</h5>
+              <span class="text-danger">International University </span>
+              <p class="mt-3">
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h4 class="mb-3">My Experience</h4>
+            <div class="resume-item mb-3 p-3 rounded border border-opacity-75">
+              <span class="badge bg-main mb-3">2000 - 2004</span>
+              <h5 class="h4">Computer Science</h5>
+              <span class="text-danger">International University </span>
+              <p class="mt-3">
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </p>
+            </div>
+            <div class="resume-item mb-3 p-3 rounded border border-opacity-75">
+              <span class="badge bg-main mb-3">2000 - 2004</span>
+              <h5 class="h4">Computer Science</h5>
+              <span class="text-danger">International University </span>
+              <p class="mt-3">
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </p>
+            </div>
+            <div class="resume-item mb-3 p-3 rounded border border-opacity-75">
+              <span class="badge bg-main mb-3">2000 - 2004</span>
+              <h5 class="h4">Computer Science</h5>
+              <span class="text-danger">International University </span>
+              <p class="mt-3">
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <h5 class="mb-3 h4">My Skills</h5>
+          <div class="col-lg-6">
+            <div class="pro">
+              <div class="progress-text mb-4 d-flex justify-content-between">
+                <span>Web Design</span>
+                <span>65% </span>
+              </div>
+              <div class="progress-bar bg-gray opacity__50 rounded" style="height: 10px;">
+                <div class="bg-main h-100 rounded" style="width: 65%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="pro">
+              <div class="progress-text mb-4 d-flex justify-content-between">
+                <span>Web Design</span>
+                <span>65% </span>
+              </div>
+              <div class="progress-bar bg-gray opacity__50 rounded" style="height: 10px;">
+                <div class="bg-main h-100 rounded" style="width: 65%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="pro">
+              <div class="progress-text mb-4 d-flex justify-content-between">
+                <span>Web Design</span>
+                <span>65% </span>
+              </div>
+              <div class="progress-bar bg-gray opacity__50 rounded" style="height: 10px;">
+                <div class="bg-main h-100 rounded" style="width: 65%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="pro">
+              <div class="progress-text mb-4 d-flex justify-content-between">
+                <span>Web Design</span>
+                <span>65% </span>
+              </div>
+              <div class="progress-bar bg-gray opacity__50 rounded" style="height: 10px;">
+                <div class="bg-main h-100 rounded" style="width: 65%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="pro">
+              <div class="progress-text mb-4 d-flex justify-content-between">
+                <span>Web Design</span>
+                <span>65% </span>
+              </div>
+              <div class="progress-bar bg-gray opacity__50 rounded" style="height: 10px;">
+                <div class="bg-main h-100 rounded" style="width: 65%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="pro">
+              <div class="progress-text mb-4 d-flex justify-content-between">
+                <span>Web Design</span>
+                <span>65% </span>
+              </div>
+              <div class="progress-bar bg-gray opacity__50 rounded" style="height: 10px;">
+                <div class="bg-main h-100 rounded" style="width: 65%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="text-center my-4">
+            <a class="btn btn-outline-main rounded-pill py-3 px-5" href="" download>Download CV <i class="fas fa-download"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS BOOTSRAP -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
